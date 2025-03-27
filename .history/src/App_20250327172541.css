@@ -1,0 +1,56 @@
+/* Background */
+body {
+  background-color: #0d021f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Image Styling */
+.harshita {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 50px auto 10px; 
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Name Styling */
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #c3a5ff; /* Light purple */
+}
+
+/* Tagline Styling */
+.tagline {
+  font-size: 18px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+
+/* Subtext */
+.subtext {
+  font-size: 14px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+/* Intro Box */
+.intro {
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 700px;
+  text-align: center;
+  margin-top: 20px;
+  color: #e5dbff;
+  padding: 10px 20px;
+ 
+}
+
+/* Highlights in Text */
+.intro span {
+  color: #8a4bff;
+  font-weight: bold;
+}

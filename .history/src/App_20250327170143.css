@@ -1,0 +1,23 @@
+
+
+/* Me */
+.harshita {
+position: absolute;
+width: 258px;
+height: 259px;
+left: 461px;
+top: 305.96px;
+}
+
+.name{
+font-family: 'Preahvihear';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 63px;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+

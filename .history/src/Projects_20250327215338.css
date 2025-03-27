@@ -1,0 +1,71 @@
+.projects-container {
+    padding: 30px;
+   
+    border-radius: 12px;
+    color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .tech {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .project-description {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  .project-description li {
+    margin-bottom: 5px;
+  }
+  .project-description {
+  list-style: disc;
+  padding-left: 20px;  /* Ensures proper indentation */
+  font-size: 1rem;
+  line-height: 1.6; /* Better spacing between points */
+}
+
+.project-description li {
+  margin-bottom: 8px; /* Adds space between bullet points */
+}
