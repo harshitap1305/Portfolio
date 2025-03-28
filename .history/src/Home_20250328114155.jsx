@@ -73,12 +73,9 @@ const Home = () => {
       <p className='intro'>I am Harshita Patidar, a Computer Science and Engineering student at IIT Bhilai, driven by a passion for software development, problem-solving, and impactful technology solutions. I have built and deployed full-stack web applications using React.js, Node.js, Express.js, and MongoDB.I thrive in dynamic environments where innovation meets purpose, and I am eager to apply my skills to challenges that drive meaningful change.</p>
       <div className="resume-container">
     <h3>My Resume</h3>
-    <a 
-  href="https://drive.google.com/uc?export=download&id=1MSy7oBDmnRTNFt26dRO-0J8-vN2XmGAz" 
-  className="resume-button">
+    <a href="https://drive.google.com/file/d/1MSy7oBDmnRTNFt26dRO-0J8-vN2XmGAz/view?usp=sharing"" className="resume-button">
     📄 Download Resume
-</a>
-
+    </a>
    </div>
 
       <div className="education-container">

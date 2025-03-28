@@ -75,7 +75,8 @@ const Home = () => {
     <h3>My Resume</h3>
     <a 
   href="https://drive.google.com/uc?export=download&id=1MSy7oBDmnRTNFt26dRO-0J8-vN2XmGAz" 
-  className="resume-button">
+  className="resume-button"
+>
     📄 Download Resume
 </a>
 
