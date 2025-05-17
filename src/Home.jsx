@@ -2,7 +2,7 @@ import React from 'react';
 import harshita from './assets/harshita.png';
 import './App.css';
 import { FaReact, FaHtml5, FaCss3Alt,FaNodeJs, FaPhp,FaGitAlt,FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
-import { SiNextdotjs, SiExpress,SiMysql,SiMongodb,SiXampp,SiPostman,SiGnubash,SiLatex,SiC,SiCplusplus,SiJavascript } from "react-icons/si";
+import { SiNextdotjs, SiExpress,SiMysql,SiMongodb,SiXampp,SiPostman,SiGnubash,SiLatex,SiC,SiCplusplus,SiJavascript, SiPython } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import Projects from './Projects';
 
@@ -14,6 +14,7 @@ const skillsData=[
           { name: "C", description: "Procedural programming language", icon: <SiC/> },
           { name: "C++", description: "Object-oriented programming language", icon: <SiCplusplus/> },
           { name: "Javascript", description: "Scripting language for web development", icon: <SiJavascript/> },
+          {name: "Python", description: "High-level programming language", icon: <SiPython/> }
           
         ]
       },
@@ -85,7 +86,7 @@ const Home = () => {
         <h1 className="education-heading">Education</h1>
         <ul className="education-list">
           <li>
-            <span className="edu-degree">B.Tech in Computer Science and Engineering</span> | <b>IIT Bhilai</b> | <b>CGPA: 8.27/10</b> (2023 - 2027)
+            <span className="edu-degree">B.Tech in Computer Science and Engineering</span> | <b>IIT Bhilai</b> | <b>CGPA: 8.65/10</b> (2023 - 2027)
           </li>
           <li>
             <span className="edu-degree">12th (MPBSE)</span> | BCM Higher Secondary School, Dewas, MP | <b>92%</b> (2023)
