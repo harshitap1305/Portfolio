@@ -94,7 +94,7 @@ const Home = () => {
         </ul>
         
       </div>
-      <h1 className="skills-heading">My Skills</h1>
+      <h1 className="heading">My Skills</h1>
       <div className="skills-container">
         {skillsData.map((section, index) => (
           <div key={index} className="skill-section">
@@ -107,9 +107,9 @@ const Home = () => {
           </div>
         ))}
       </div>
-      <h1 className="projects-heading">MY Projects</h1>
+      <h1 className="heading">My Projects</h1>
       <Projects/>
-      <h2 className="ach-heading">Achievements</h2>
+      <h2 className="heading">Achievements</h2>
       <div className="achievements-container">
  
   <ul className="achievements-list">
@@ -117,7 +117,7 @@ const Home = () => {
     <li>Ranked in the Top 9.3 percent (among 180,372 students) in <b>JEE ADVANCED, 2023</b></li>
   </ul>
 </div>
-<h2 className="contact-heading">Contact Information</h2>
+<h2 className="heading">Contact Information</h2>
 <div className="contact-container">
 
   <div className="contact-details">
