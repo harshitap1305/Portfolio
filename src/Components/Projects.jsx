@@ -3,7 +3,7 @@ import {
   Github,
   Calendar,
 } from "lucide-react";
-import PitchPerfect from "../assets/pitchperfect.png";
+import PitchPerfect from "../assets/pitchPerfect.png";
 import OmniPrep from "../assets/omni.png";
 import library from "../assets/library.png";
 import eduverse from "../assets/eduverse.png";
