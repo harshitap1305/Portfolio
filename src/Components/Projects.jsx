@@ -170,7 +170,7 @@ const projects = [
             </div>
 
             {/* Description with better typography */}
-            <p className="text-gray-600 dark:text-gray-300 flex-grow leading-relaxed text-sm">
+            <p className="text-gray-600 dark:text-gray-300 flex-grow leading-relaxed text-sm" style={{ color: darkMode ? "grey" : 'black' }}>
               {p.description}
             </p>
 

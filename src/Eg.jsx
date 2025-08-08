@@ -362,6 +362,10 @@ export default function Portfolio() {
                <div
                  key={i}           
                  className="p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 bg-white dark:bg-[#1f1f1f] border border-gray-200 dark:border-gray-700"
+                 style={{
+                background: darkMode ? "#1f1f1f" : "#fff",
+                border: `1px solid ${darkMode ? "#333" : "#e5e5e5"}`,
+               }}
                 >
                  <div className="flex flex-col items-center space-y-4">
                    <div className="text-3xl">{a.icon}</div>
@@ -370,7 +374,7 @@ export default function Portfolio() {
                    {a.title}
                    </h3>
            
-                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed" style={{ color: darkMode ? "#d1d5db" : "#000000" }}>
                      {a.desc}
                    </p>
                  </div>
@@ -392,6 +396,10 @@ export default function Portfolio() {
         <div
           key={i}
           className="w-full max-w-md p-6 rounded-2xl bg-white dark:bg-[#1f1f1f] border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-xl transition-shadow duration-300"
+          style={{
+            background: darkMode ? "#1f1f1f" : "#fff",
+            border: `1px solid ${darkMode ? "#333" : "#e5e5e5"}`,
+          }}
         >
           <div className="flex flex-col items-center space-y-3">
             <div className="text-4xl">{p.icon}</div>
@@ -400,13 +408,13 @@ export default function Portfolio() {
               {p.title}
             </h3>
 
-            <p className="text-gray-700 dark:text-gray-300 font-medium">
+            <p className="text-gray-700 dark:text-gray-300 font-medium" style={{ color: darkMode ? "#fff" : 'black' }}>
               {p.org}
             </p>
 
             <p className="text-sm text-gray-500 italic">{p.dur}</p>
 
-            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed" style={{ color: darkMode ? "grey" : 'black' }}>
               {p.desc}
             </p>
           </div>

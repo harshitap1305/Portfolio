@@ -50,11 +50,11 @@ const Education = ({darkMode,sectionClass,ACCENT,h2}) => {
                   className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: ACCENT }}
                 ></div>
-                <h3 className="text-xl font-bold text-black dark:text-white leading-tight">
+                <h3 className="text-xl font-bold text-black dark:text-white leading-tight" style={{ color: darkMode ? "#fff" : ACCENT }}>
                   B. Tech
                 </h3>
               </div>
-              <p className="text-lg font-semibold text-black dark:text-gray-200 mb-1 text-left">
+              <p className="text-lg font-semibold text-black dark:text-gray-200 mb-1 text-left" style={{ color: darkMode ? "#fff" : 'black' }}>
                 Indian Institute of Technology, Bhilai
               </p>
               <p className="text-sm font-medium text-left" style={{ color: ACCENT }}>
@@ -86,7 +86,7 @@ const Education = ({darkMode,sectionClass,ACCENT,h2}) => {
               <span className="text-sm font-semibold" style={{ color: ACCENT }}>
                 CGPA:
               </span>
-              <span className="text-lg font-bold text-black dark:text-white">
+              <span className="text-lg font-bold text-black dark:text-white" style={{ color: darkMode ? "#fff" : 'black' }}>
                 8.45 / 10.0
               </span>
             </div>
@@ -94,8 +94,8 @@ const Education = ({darkMode,sectionClass,ACCENT,h2}) => {
 
           <div>
             <h4 className="font-bold text-black dark:text-gray-200 mb-4 flex items-center gap-2">
-              <span className="text-lg"><BookOpen/></span>
-              Key Coursework
+              <span className="text-lg" style={{ color: darkMode ? "#fff" : 'black' }}><BookOpen/></span>
+              <div style={{ color: darkMode ? "#fff" : 'black' }}>Key Coursework</div>
             </h4>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
@@ -156,11 +156,11 @@ const Education = ({darkMode,sectionClass,ACCENT,h2}) => {
                   className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: ACCENT }}
                 ></div>
-                <h3 className="text-xl font-bold text-black dark:text-white leading-tight">
+                <h3 className="text-xl font-bold text-black dark:text-white leading-tight" style={{ color: darkMode ? "#fff" : ACCENT }}>
                   Higher Secondary Education
                 </h3>
               </div>
-              <p className="text-lg font-semibold text-black dark:text-gray-200 mb-1 text-left">
+              <p className="text-lg font-semibold text-black dark:text-gray-200 mb-1 text-left" style={{ color: darkMode ? "#fff" : 'black'}}>
                 BCM Higher Secondary School, Dewas, MP
               </p>
               <p className="text-sm font-medium text-left" style={{ color: ACCENT }}>
@@ -192,7 +192,7 @@ const Education = ({darkMode,sectionClass,ACCENT,h2}) => {
               <span className="text-sm font-semibold" style={{ color: ACCENT }}>
                 Percentage:
               </span>
-              <span className="text-lg font-bold text-black dark:text-white">
+              <span className="text-lg font-bold text-black dark:text-white" style={{ color: darkMode ? "#fff" : 'black'}}>
                 92%
               </span>
             </div>
@@ -200,8 +200,10 @@ const Education = ({darkMode,sectionClass,ACCENT,h2}) => {
 
           <div>
             <h4 className="font-bold text-black dark:text-gray-200 mb-4 flex items-center gap-2">
-              <span className="text-lg"><BookOpen/></span>
-              Core Subjects
+              <span className="text-lg" style={{ color: darkMode ? "#fff" : 'black'}}><BookOpen/></span>
+              <div className="text-lg font-semibold" style={{ color: darkMode ? "#fff" : 'black' }}>
+                Key Subjects
+              </div>
             </h4>
             <div className="grid grid-cols-3 gap-3">
               {[
