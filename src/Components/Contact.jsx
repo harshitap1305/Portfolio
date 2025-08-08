@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 
 function Contact({ darkMode, ACCENT, h2, sectionClass }) {
   const formRef = useRef();

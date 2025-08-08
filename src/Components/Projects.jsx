@@ -1,20 +1,7 @@
 // src/components/Portfolio.js
 import {
-  Moon,
-  Sun,
-  Menu,
-  X,
   Github,
-  Linkedin,
-  Mail,
-  Phone,
-  MapPin,
-  ExternalLink,
   Calendar,
-  ArrowRight,
-  Download,
-  MessageCircle,
-  BookOpen
 } from "lucide-react";
 import PitchPerfect from "../assets/pitchperfect.png";
 import OmniPrep from "../assets/omni.png";
