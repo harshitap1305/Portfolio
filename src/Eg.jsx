@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Projects from "./Components/Projects";
 import Education from "./Components/Education";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 import harshita from './assets/harshita2.jpg';
 import {
   Moon,
@@ -23,7 +24,8 @@ import {
   Sparkle,
   Sparkles,
   UserRoundCheck,
-  Target
+  Target,
+  CodeXml,
 } from "lucide-react";
 
 const ACCENT = "#913175";
@@ -95,6 +97,13 @@ export default function Portfolio() {
   ];
 
   const pors = [
+      {
+      icon: <CodeXml/>,
+      title: "Mentor",
+      org: "Openlake, IIT Bhilai (Open Source Club)",
+      dur: "Aug 2025 – Present",
+      desc: "Contributing and maintaining open-source projects while managing and organizing open-source events and initiatives.",
+    },
     {
       icon: <School/>,
       title: "Mentor (Vinoba Polestar Program)",
@@ -264,11 +273,11 @@ export default function Portfolio() {
                 }`}>
                   Resume
                 </a>
-                <a href="#" className={`flex items-center gap-2 px-3 py-3 rounded-full border border-[#913175] hover:bg-[#913175] hover:text-white transition-colors ${
+                {/* <a href="#" className={`flex items-center gap-2 px-3 py-3 rounded-full border border-[#913175] hover:bg-[#913175] hover:text-white transition-colors ${
                   darkMode ? 'text-grey-200' : 'text-grey-800'
                 }`}>
                   Chat with My Bot
-                </a>
+                </a> */}
               </div>
             </div>
             
@@ -409,100 +418,7 @@ export default function Portfolio() {
 
 
       {/* --------------------------- CONTACT -------------------------- */}
-      <section id="contact" className="py-24">
-        <div className={sectionClass}>
-          <h2 className={h2} style={{ color: ACCENT }}>
-            Contact
-          </h2>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6 text-lg">
-              <p>
-                Have a project in mind? Let’s collaborate! Feel free to reach
-                out via any channel below.
-              </p>
-
-              <div className="space-y-4">
-                <a
-                  href="mailto:harshita@example.com"
-                  className="flex items-center gap-2"
-                  style={{ color: ACCENT }}
-                >
-                  <Mail size={20} /> harshita@example.com
-                </a>
-                <a
-                  href="tel:+1234567890"
-                  className="flex items-center gap-2"
-                  style={{ color: ACCENT }}
-                >
-                  <Phone size={20} /> +1 (555) 123-4567
-                </a>
-                <span className="flex items-center gap-2">
-                  <MapPin size={20} /> City, Country
-                </span>
-              </div>
-
-              <div className="flex gap-4 pt-4">
-                <a
-                  href="#"
-                  className="flex items-center gap-2"
-                  style={{ color: ACCENT }}
-                >
-                  <Github size={20} /> GitHub
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center gap-2"
-                  style={{ color: ACCENT }}
-                >
-                  <Linkedin size={20} /> LinkedIn
-                </a>
-              </div>
-            </div>
-
-            {/* simple contact form (no backend) */}
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="space-y-4 p-6 rounded-xl shadow-lg"
-              style={{ background: darkMode ? "#1f1f1f" : "#fff" }}
-            >
-              {["Name", "Email"].map((label) => (
-                <div key={label}>
-                  <label className="block mb-1">{label}</label>
-                  <input
-                    type={label === "Email" ? "email" : "text"}
-                    className="w-full px-4 py-2 rounded border focus:outline-none"
-                    style={{
-                      borderColor: ACCENT,
-                      background: darkMode ? "#2d2d2d" : "#fff",
-                    }}
-                    placeholder={`Your ${label}`}
-                  />
-                </div>
-              ))}
-              <div>
-                <label className="block mb-1">Message</label>
-                <textarea
-                  rows="4"
-                  className="w-full px-4 py-2 rounded border focus:outline-none"
-                  style={{
-                    borderColor: ACCENT,
-                    background: darkMode ? "#2d2d2d" : "#fff",
-                  }}
-                  placeholder="Your message"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full py-3 rounded text-white font-semibold"
-                style={{ background: ACCENT }}
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
+     <Contact darkMode={darkMode} ACCENT={ACCENT} h2={h2} sectionClass={sectionClass}/>
 
       {/* ---------------------------- FOOTER -------------------------- */}
       <footer className="py-6 text-center text-sm">

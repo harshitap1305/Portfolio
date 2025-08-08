@@ -16,7 +16,10 @@ import {
   MessageCircle,
   BookOpen
 } from "lucide-react";
-
+import PitchPerfect from "../assets/pitchperfect.png";
+import OmniPrep from "../assets/omni.png";
+import library from "../assets/library.png";
+import eduverse from "../assets/eduverse.png";
 const ACCENT = "#913175";
 
 function Projects({darkMode, ACCENT, h2, sectionClass }) {
@@ -24,29 +27,39 @@ function Projects({darkMode, ACCENT, h2, sectionClass }) {
 const projects = [
     {
       title: " OmniPrep– Voice-Based Interview Preparation Platform",
-      image: "/path/to/your/project-screenshot.jpg",
+      image: { src: OmniPrep, alt: "OmniPrep Logo" },
       description:
-        "Full-stack store with user auth, payments and admin dashboard.",
-      github: "https://github.com/harshita/ecommerce",
-      demo: "https://myecommerce.netlify.app",
-      date: "Dec 2024",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+        "A full-stack platform that helps students practice interviews through AI-powered, voice-based mock sessions, resume analysis, real-time soft-skill feedback, job search tools, and interview scheduling with reminders.",
+      github: "https://github.com/aviralsaxena16/OmniPrep",
+      //demo: "https://myecommerce.netlify.app",
+      date: "July 2025",
+      tech: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "Clerk Auth", "OmniDimension Voice Agent", "Groq API", "NodeMailer"],
     },
     {
-      title: "E-learning Platform",
-      image:"",
+      title: "PitchPerfect AI- AI-based Pitch Analysis Platform",
+      image: { src: PitchPerfect, alt: "PitchPerfect Logo" },
       description:
-        "Developed a modular e-learning platform featuring educational video content, gamified quizzes, real-time AI chatbot support, secure user authentication, and a responsive user interface.",
-      github: "https://github.com/harshita/taskmanager",
-      demo: "https://mytaskmanager.vercel.app",
-      date: "Oct 2024",
+        "An AI-driven tool that evaluates startup pitches across multiple dimensions, simulates investor Q&A, and supports PDF/PPT/image inputs with OCR for inclusive accessibility.",
+      github: "https://github.com/Sharmamayankkkk/PitchPerfect-AI",
+      //demo: "https://mytaskmanager.vercel.app",
+      date: "June 2025",
+      tech: ["React.js", "Node.js", "Express.js", "Tailwind CSS", "Google Gemini API", "Tesseract.js"],
+    },
+    {
+      title: "Eduverse - E-learning Platform",
+      image: { src: eduverse, alt: "Eduverse Logo" },
+      description:
+        "A modular learning platform offering personalized video content, gamified quizzes, and an AI chatbot for real-time learner assistance, with secure authentication and scalable design.",
+      github: "https://github.com/aviralsaxena16/Eduverse-Elearning-Platform",
+      //demo: "https://mytaskmanager.vercel.app",
+      date: "Jan 2025 - Mar 2025",
       tech: ["React.js", "Node.js", "Express.js", "MongoDb", "YouTube API", "OpenTrivia API"],
     },
     {
       title: "Library Management System",
-      image:"",
+      image: { src: library, alt: "Library Management Logo" },
       description:
-        "Developed a web-based library management system with role-based dashboards for admins and users. Implemented secure CRUD operations for books, users, and borrowing history using a normalized MySQL database. Focused on responsive design and efficient data workflows.",
+        "A web application for managing books, user profiles, and borrowing history with separate dashboards for admins and users, enabling efficient role-based operations.",
       github: "https://github.com/harshitap1305/Library-Management-Website",
       //demo: "https://myweather.netlify.app",
       date: "Oct 2024 - Nov 2024",
@@ -87,8 +100,8 @@ const projects = [
           <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
             {p.image ? (
               <img
-                src={p.image}
-                alt={p.title}
+                src={p.image.src}
+                alt={p.image.alt}
                 className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 onError={(e) => {
@@ -126,7 +139,7 @@ const projects = [
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             
             {/* Quick preview badge */}
-            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+            {/* <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
               <div 
                 className="px-3 py-1.5 rounded-full text-xs font-medium backdrop-blur-sm"
                 style={{
@@ -137,7 +150,7 @@ const projects = [
               >
                 View Project
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Card content */}
@@ -200,7 +213,7 @@ const projects = [
                 <Github size={16} />
                 Code
               </a>
-              <a
+              {/* <a
                 href={p.demo}
                 className="flex items-center gap-2 font-medium text-sm px-4 py-2 rounded-lg transition-all duration-200 hover:scale-105"
                 style={{ 
@@ -218,7 +231,7 @@ const projects = [
               >
                 <ExternalLink size={16} />
                 Demo
-              </a>
+              </a> */}
             </div>
           </div>
 
