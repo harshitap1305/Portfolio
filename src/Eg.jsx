@@ -79,6 +79,26 @@ export default function Portfolio() {
   const achievements = [
     {
       icon: <Trophy/>,
+      title:"Competitive Programming Excellence",
+      desc:"Achieved a peak competitive programming rating of 1750+ on LeetCode, placing among the top percentile of global users.",
+    },
+    {
+      icon: <Trophy/>,
+      title:"Strong DSA Problem-Solving Experience",
+      desc:"Solved 700+ Data Structures and Algorithms (DSA) problems across multiple competitive programming platforms, building strong algorithmic and analytical skills.",
+    },
+    {
+      icon: <Trophy/>,
+      title: "Smart India Hackathon (SIH) 2025 – Institutional Qualifier",
+      desc: " Qualified the Institutional Round of Smart India Hackathon 2025, a prestigious nationwide innovation and problem-solving competition.",
+    },
+    {
+      icon: <Trophy/>,
+      title: "Inter IIT Tech Meet 14.0",
+      desc: " Secured 12th rank among 23 IITs in the Inter IIT Tech Meet, competing in the High-Preparation problem statement by Pathway.",
+    },
+    {
+      icon: <Trophy/>,
       title: "JEE MAINS, 2023",
       desc: " Ranked in the Top 3 percent (among 11,13,325 students)",
     },
